@@ -7,13 +7,13 @@ using Cinemachine;
 
 public class Playergenerator : MonoBehaviour
 {
-
-	[SerializeField] private string playerObjectName = "Player";
+	public static string playerObjectName = "fire_tama";
 	[SerializeField] private CinemachineVirtualCamera mainvcam;
 	[SerializeField] private Vector3 firstPos = new Vector3(0,2,0);
 	// Use this for initialization
 	void Start () 
 	{
+		
 	}
 	
 	// Update is called once per frame

@@ -217,11 +217,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f00e196621b3d7543bcc4cb57627587a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
   accelKey: 32
   accelWeight: 3
   accelTime: 10
-  accelInterval: 1
+  acceiInterval: 1
+  speed: 0.23
 --- !u!135 &135390443017835998
 SphereCollider:
   m_ObjectHideFlags: 1
