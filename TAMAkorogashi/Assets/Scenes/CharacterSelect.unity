@@ -203,7 +203,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4905351731107242, guid: beff0d785c8b9644e9bbabeb43f6cc19, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.263
       objectReference: {fileID: 0}
     - target: {fileID: 4905351731107242, guid: beff0d785c8b9644e9bbabeb43f6cc19, type: 2}
       propertyPath: m_LocalPosition.z
@@ -241,11 +241,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4905351731107242, guid: beff0d785c8b9644e9bbabeb43f6cc19, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.2530069
+      value: 0.37951034
       objectReference: {fileID: 0}
     - target: {fileID: 4905351731107242, guid: beff0d785c8b9644e9bbabeb43f6cc19, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.24013638
+      value: 0.36020458
       objectReference: {fileID: 0}
     - target: {fileID: 54151351391617324, guid: beff0d785c8b9644e9bbabeb43f6cc19,
         type: 2}
@@ -254,7 +254,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1494183648529538, guid: beff0d785c8b9644e9bbabeb43f6cc19, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114847891592733920, guid: beff0d785c8b9644e9bbabeb43f6cc19,
         type: 2}
@@ -280,6 +280,10 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905351731107242, guid: beff0d785c8b9644e9bbabeb43f6cc19, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: beff0d785c8b9644e9bbabeb43f6cc19, type: 2}
@@ -670,6 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2c909bfa1dea1b4c8986d63ab620612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainSceneName: MainScene
   _characters:
   - character: {fileID: 186954411}
     characterPropertyUI: {fileID: 2071030799}
@@ -688,7 +693,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &709084457
 GameObject:
@@ -1337,7 +1342,7 @@ GameObject:
   - component: {fileID: 1249047311}
   - component: {fileID: 1249047310}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: '[Stage] CharacterStage'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1429,7 +1434,7 @@ Transform:
   - {fileID: 1567841286}
   - {fileID: 1549344666}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1424162482
 GameObject:
@@ -1583,7 +1588,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1502531105
 GameObject:
@@ -1619,7 +1624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1502531107
@@ -1759,7 +1764,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4773918946852148, guid: c52eab56186ebbb4599c1c907c7dd2b0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.905
       objectReference: {fileID: 0}
     - target: {fileID: 4773918946852148, guid: c52eab56186ebbb4599c1c907c7dd2b0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1797,11 +1802,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4773918946852148, guid: c52eab56186ebbb4599c1c907c7dd2b0, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.2530069
+      value: 0.20240553
       objectReference: {fileID: 0}
     - target: {fileID: 4773918946852148, guid: c52eab56186ebbb4599c1c907c7dd2b0, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.24013638
+      value: 0.19210911
       objectReference: {fileID: 0}
     - target: {fileID: 54644952690326102, guid: c52eab56186ebbb4599c1c907c7dd2b0,
         type: 2}
@@ -1811,6 +1816,10 @@ Prefab:
     - target: {fileID: 1242907824331960, guid: c52eab56186ebbb4599c1c907c7dd2b0, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4773918946852148, guid: c52eab56186ebbb4599c1c907c7dd2b0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c52eab56186ebbb4599c1c907c7dd2b0, type: 2}
@@ -1928,7 +1937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570496327
@@ -2067,7 +2076,7 @@ GameObject:
   - component: {fileID: 1688383851}
   - component: {fileID: 1688383850}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: '[UI]CharacterSelectUI'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2143,7 +2152,7 @@ RectTransform:
   - {fileID: 203462152}
   - {fileID: 777519044}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
