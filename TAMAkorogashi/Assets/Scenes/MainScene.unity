@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311912, g: 0.3807398, b: 0.3587271, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,7 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1761c264ba4c02c47b8b53d34192b144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerObjectName: tama_Player
   mainvcam: {fileID: 1280059190}
   firstPos: {x: 0, y: 2, z: 0}
 --- !u!4 &103724353
@@ -416,6 +415,10 @@ Prefab:
     - target: {fileID: 4989248918150496, guid: 5353d2e0344f3034085e7fb953a45921, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229299549523592, guid: 5353d2e0344f3034085e7fb953a45921, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5353d2e0344f3034085e7fb953a45921, type: 2}
