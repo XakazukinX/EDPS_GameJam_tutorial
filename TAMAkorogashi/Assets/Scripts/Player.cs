@@ -8,6 +8,9 @@ public class Player : Accel
 	private PhotonView _photonView;
 	[Header("Playerの基本情報")]
 	[SerializeField] private float speed = 0.23f;
+
+	[SerializeField] private string gameOverUIName;
+
 /*	[SerializeField] private int Life;*/
 	
 	private void Start()
@@ -37,5 +40,13 @@ public class Player : Accel
 */
 		
 	}
-    
+
+	private void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.tag == "Field")
+		{
+			GameObject.Find ("Canvas").transform.Find(gameOverUIName).gameObject.SetActive(true);
+			gameObject.SetActive(false);
+		}
+	}
 }
