@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterSelectButton : MonoBehaviour 
+public class CharacterSelectButton : MonoBehaviour
 {
 	enum CHARACTER_SELECT_BUTTON_TYPE
 	{
@@ -18,7 +18,7 @@ public class CharacterSelectButton : MonoBehaviour
 
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
 		//表示の初期化
 		_characterSelectManager._characters[0].selected();

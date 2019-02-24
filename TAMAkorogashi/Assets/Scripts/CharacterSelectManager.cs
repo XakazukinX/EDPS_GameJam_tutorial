@@ -6,6 +6,7 @@ using akazukin_GameJam;
 
 public class CharacterSelectManager : MonoBehaviour
 {
+    private AudioSource _audioSource;
     //選択中のキャラクターインデックスをここに格納。
     private int selectNumber;
     
@@ -33,7 +34,13 @@ public class CharacterSelectManager : MonoBehaviour
     }
 
     [SerializeField] public CharacterObject[] _characters;
-    
+
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
     //それぞれのボタンが押されたときの処理。
     public void clickLeftButton()
     {
@@ -51,6 +58,7 @@ public class CharacterSelectManager : MonoBehaviour
     
     public void clickSelectButton()
     {
+        _audioSource.Play();
         Debug.Log(getSelectedCharacterName());
         Playergenerator.playerObjectName = getSelectedCharacterName();
         
@@ -62,6 +70,7 @@ public class CharacterSelectManager : MonoBehaviour
     //Character切り替える関数。
     private void characterChange(int _beforeNum)
     {
+        _audioSource.Play();
         selectNumber = Mathf.Clamp(selectNumber,0,2);
         //クリック前に表示されていたPlayerと同じindexであれば弾く。
         if (_beforeNum == selectNumber)

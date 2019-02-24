@@ -28,6 +28,7 @@ public class GameOverManager : MonoBehaviour
 			LoadScene loadScene = new LoadScene();
 			
 			loadScene.LoadStart(titleSceneName);
+			PhotonNetwork.LeaveRoom();
 		}
 	}
 	

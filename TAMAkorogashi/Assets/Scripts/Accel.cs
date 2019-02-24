@@ -13,11 +13,26 @@ public class Accel : MonoBehaviour {
 	[SerializeField] private float acceiInterval;
 	private bool isInterval;
 
+	private AudioSource _audioSource;
+
+	public void Start()
+	{
+		_audioSource = GetComponent<AudioSource>();
+	}
+
 	private void Update()
 	{
 		//AccelKeyが入力されたときに加速が開始される。
 		if (Input.GetKeyDown(accelKey) && !isAccel)
 		{
+			if (_audioSource != null)
+			{
+				_audioSource.Play();
+			}
+			else
+			{
+				Debug.LogError("Audiosorceがないよ！");
+			}
 			isAccel = true;
 			StartCoroutine(accelTimeManagement());
 /*
