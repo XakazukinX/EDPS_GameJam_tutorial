@@ -222,6 +222,7 @@ MonoBehaviour:
   accelTime: 5
   acceiInterval: 2
   speed: 0.42
+  gameOverUIName: '[UI]GameOverUI'
 --- !u!135 &135340211610025950
 SphereCollider:
   m_ObjectHideFlags: 1

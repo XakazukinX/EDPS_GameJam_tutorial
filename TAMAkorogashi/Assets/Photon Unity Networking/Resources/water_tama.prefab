@@ -119,6 +119,7 @@ MonoBehaviour:
   accelTime: 2
   acceiInterval: 5
   speed: 0.3
+  gameOverUIName: '[UI]GameOverUI'
 --- !u!114 &114917726320964684
 MonoBehaviour:
   m_ObjectHideFlags: 1
