@@ -15,7 +15,8 @@ public class GameOverManager : MonoBehaviour
 	void Start () 
 	{
 		_scoreCounter.scoreStop();
-		var resultScore = (float)((int) (_scoreCounter.getScore() * 100)) / 100;
+		var resultScore = (float)((int) (_scoreCounter.getScore() * 100));
+		_scoreCounter.setScore(resultScore);
 		scoreText.text = resultScore.ToString();
 	}
 	

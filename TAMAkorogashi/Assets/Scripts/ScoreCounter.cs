@@ -20,7 +20,7 @@ public class ScoreCounter : MonoBehaviour
 			return;
 		}
 		score += Time.deltaTime*10;
-		Debug.Log(score);
+//		Debug.Log(score);
 	}
 
 	public void scoreStop()
@@ -31,5 +31,10 @@ public class ScoreCounter : MonoBehaviour
 	public float getScore()
 	{
 		return score;
+	}
+	
+	public void setScore(float newScore)
+	{
+		score = newScore;
 	}
 }
