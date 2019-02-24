@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : Accel
-{        
+{
 	private Rigidbody rigidbody;
 	private PhotonView _photonView;
 	[Header("Playerの基本情報")]
@@ -14,11 +14,12 @@ public class Player : Accel
 /*	[SerializeField] private int Life;*/
 	
 	private void Start()
-	
 	{
 		//Componentの取得
 		_photonView = GetComponent<PhotonView>();
 		rigidbody = GetComponent<Rigidbody>();
+		base.Start();
+
 	}
 	
 	void FixedUpdate ()
