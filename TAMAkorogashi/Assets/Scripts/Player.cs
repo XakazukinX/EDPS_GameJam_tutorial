@@ -44,6 +44,10 @@ public class Player : Accel
 
 	private void OnCollisionEnter(Collision other)
 	{
+		if (!_photonView.isMine)
+		{
+			return;
+		}
 		if (other.gameObject.tag == "Field")
 		{
 			GameObject.Find ("Canvas").transform.Find(gameOverUIName).gameObject.SetActive(true);
